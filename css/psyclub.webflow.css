@@ -423,6 +423,10 @@ p {
     width:50%;
 }
 
+.center-align{
+  text-align:center;
+}
+
 @media (max-width: 991px) {
   body {
     font-size: 13px;
