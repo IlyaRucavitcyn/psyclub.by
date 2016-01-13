@@ -418,6 +418,23 @@ p {
   float: left;
   clear: right;
 }
+
+.full-width{
+    width:100%;
+}
+
+.half-width{
+    width:50%;
+}
+
+.center-align{
+  text-align:center;
+}
+
+.right-align{
+  text-align: right;
+}
+
 @media (max-width: 991px) {
   body {
     font-size: 13px;
