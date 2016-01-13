@@ -375,7 +375,7 @@ p {
   color: black;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
 }
 .h-link:hover {
@@ -385,7 +385,7 @@ p {
   color: white;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
 }
 .h-link-white:hover {
