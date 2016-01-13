@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IlyaRucavitcyn/psyclub.by/issues"
   },
-  "homepage": "https://github.com/IlyaRucavitcyn/psyclub.by#readme"
+  "homepage": "https://github.com/IlyaRucavitcyn/psyclub.by#readme",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
 }
