@@ -84,8 +84,20 @@ p {
   display: block;
 }
 .layoutcorrection {
-  margin-right: 5%;
+  /*margin-right: 5%;*/
 }
+
+.header,
+.sticky-wrapper {
+    z-index: 999;
+    transition: .4s;
+}
+
+.is-sticky .header{
+  background-color:#3E3330; /*fallback colour*/
+  background-color:rgba(62,51,48,0.9);
+}
+
 .tabs-menu {
   padding-top: 40px;
 }
@@ -524,6 +536,11 @@ p {
     padding-right: 40px;
     float: left;
   }
+
+  .half-width{
+      width:50%;
+  }
+  
   .cntct {
     padding-right: 20px;
     clear: right;
