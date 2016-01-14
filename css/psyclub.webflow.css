@@ -92,6 +92,9 @@ p {
 .sticky-wrapper {
     z-index: 999;
 }
+.sticky-wrapper {
+    height: 140px;
+}
 .header {
     height: 140px;
     transition: .4s;
@@ -100,6 +103,7 @@ p {
     height: 51px;
     background-color:#fff;
     border-bottom: 1px solid #999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .is-sticky .txt-white {
     color: #333;
