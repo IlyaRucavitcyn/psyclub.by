@@ -102,7 +102,7 @@ p {
 .is-sticky .header{
     height: 51px;
     background-color:#fff;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .is-sticky .txt-white {
