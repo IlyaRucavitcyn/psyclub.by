@@ -53,19 +53,23 @@ p {
   padding-bottom: 0;
 }
 .txt-logo {
-  margin-right: 40px;
-  float: left;
-  font-family:'Open Sans', sans-serif;
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 10px;
-  text-transform: uppercase;
+    margin-right: 40px;
+    float: left;
+    font-family:'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+.is-sticky .txt-logo {
+    color: #333;
 }
 .bl-top {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 30px;
+    display: block;
+    padding: 60px 0;
+    transition: .4s;
 }
 .float-left {
   float: left;
@@ -83,21 +87,26 @@ p {
 .promo-face {
   display: block;
 }
-.layoutcorrection {
-  /*margin-right: 5%;*/
-}
 
 .header,
 .sticky-wrapper {
     z-index: 999;
+}
+.header {
+    height: 140px;
     transition: .4s;
 }
-
 .is-sticky .header{
-  background-color:#3E3330; /*fallback colour*/
-  background-color:rgba(62,51,48,0.9);
+    height: 51px;
+    background-color:#fff;
+    border-bottom: 1px solid #999;
 }
-
+.is-sticky .txt-white {
+    color: #333;
+}
+.is-sticky .bl-top {
+    padding: 15px 0;
+}
 .tabs-menu {
   padding-top: 40px;
 }
