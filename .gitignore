@@ -35,4 +35,4 @@ node_modules
 .node_repl_history
 
 #Adding blog/wp-content
-blog/wp-content
+blog/wp-content/uploads
