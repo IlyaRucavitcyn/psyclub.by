@@ -1,7 +1,10 @@
 // var $photoContainer = $('#photo-holder');
-var sliderHeight = $(window).height() - $("#sticky-wrapper").height();
-$('#photo-holder').height(sliderHeight);
+function setElementHeight (element, height){
+  element.height(height);
+}
+
+setElementHeight($('#photo-holder'),$(window).height() - $("#sticky-wrapper").height());
 
 $(window).on("resize", function () {
-  $('#photo-holder').height($(window).height() - $("#sticky-wrapper").height())
+  setElementHeight($('#photo-holder'),$(window).height() - $("#sticky-wrapper").height())
 });
