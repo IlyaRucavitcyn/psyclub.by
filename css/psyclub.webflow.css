@@ -517,9 +517,16 @@ p {
   position:relative;
 	overflow:hidden;
 	display:block;
-  width:100%;
+  /*width:1920px;*/
 	height:100%;
 	transition: left 400ms linear, top 400ms linear;
+}
+
+.visual-container .image-frame img{
+  height:100%;
+  position: absolute;
+  left:0;
+  top:0;
 }
 
 @media (max-width: 991px) {
