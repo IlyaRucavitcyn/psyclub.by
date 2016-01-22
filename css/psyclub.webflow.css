@@ -487,24 +487,26 @@ p {
 
 .left-section{
   overflow:hidden;
-  background-color: green;
+  /*background-color: green;*/
   transition: opacity 500ms linear;
 }
 
 .right-section{
   overflow:hidden;
-  background-color: red;
+  /*background-color: red;*/
   transition: opacity 500ms linear;
 }
 
-.left-section:hover, .right-section:hover{
-  opacity: 0.3;
+.left-section:hover .image-frame img.fly,
+.right-section:hover .image-frame img.fly{
+  opacity:0;
 }
 
 .info-default{
   width:100%;
   text-align:center;
   position:absolute;
+  z-index: 3;
   left:0;
   bottom:15%;
   font-size:100px;
@@ -522,11 +524,21 @@ p {
 	transition: left 400ms linear, top 400ms linear;
 }
 
-.visual-container .image-frame img{
-  /*height:inherit;*/
-  /*position: absolute;*/
-  left:0;
-  top:0;
+.visual-container img{
+  vertical-align:top;
+  position:relative;
+  transition: opacity 500ms linear;
+  z-index: 1;
+	opacity:1;
+	left:0;
+}
+
+.visual-container img.fly {
+	opacity:1;
+	z-index:2;
+  -webkit-filter:grayscale(1);
+	position:absolute;
+	top:0;
 }
 
 @media (max-width: 991px) {
