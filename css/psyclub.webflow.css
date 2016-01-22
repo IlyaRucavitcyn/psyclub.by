@@ -68,7 +68,7 @@ p {
 }
 .bl-top {
     display: block;
-    padding: 60px 0;
+    padding: 30px 0;
     transition: .4s;
 }
 .float-left {
@@ -92,13 +92,20 @@ p {
 .sticky-wrapper {
     z-index: 999;
 }
+
 .sticky-wrapper {
-    height: 140px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    height: 80px;
+    background-color:rgba(0,0,0,0.1);
 }
+
 .header {
-    height: 140px;
     transition: .4s;
 }
+
 .is-sticky .header{
     height: 51px;
     background-color:#fff;
