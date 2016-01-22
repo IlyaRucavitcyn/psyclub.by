@@ -471,11 +471,17 @@ p {
 .left-section{
   overflow:hidden;
   background-color: green;
+  transition: opacity 500ms linear;
 }
 
 .right-section{
   overflow:hidden;
   background-color: red;
+  transition: opacity 500ms linear;
+}
+
+.left-section:hover, .right-section:hover{
+  opacity: 0.3;
 }
 
 @media (max-width: 991px) {
