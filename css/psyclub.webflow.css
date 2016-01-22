@@ -523,8 +523,8 @@ p {
 }
 
 .visual-container .image-frame img{
-  height:100%;
-  position: absolute;
+  /*height:inherit;*/
+  /*position: absolute;*/
   left:0;
   top:0;
 }
