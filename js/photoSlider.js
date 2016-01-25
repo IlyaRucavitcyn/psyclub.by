@@ -57,7 +57,7 @@ $(window).on("resize", function () {
   setImageTop($('.visual-container .image-frame img'), $('.visual-container .image-frame'));
 });
 
-$($(".visual-container .left-section")).on("click", function () {
+$(".visual-container .left-section").on("click", function () {
   if($(".visual-container .left-section").hasClass("active")) {
     setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     slideImage($(".visual-container .left-section"), "50%", $(".visual-container .right-section"), "50%");
@@ -72,7 +72,7 @@ $($(".visual-container .left-section")).on("click", function () {
 })
 
 
-$($(".visual-container .right-section")).on("click", function () {
+$(".visual-container .right-section").on("click", function () {
   if($(".visual-container .right-section").hasClass("active")) {
     setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     slideImage($(".visual-container .right-section"), "50%", $(".visual-container .left-section"), "50%");
@@ -87,10 +87,10 @@ $($(".visual-container .right-section")).on("click", function () {
   $('.visual-container').addClass('slided');
 })
 
-$($('.left-section.active .sideline')).on("mouseover", function () {
+$('.left-section.active .sideline').on('mouseover', function () {
   slideImage($(".visual-container .left-section"), "80%", $(".visual-container .right-section"), "20%");
 })
 
-$($('.left-section.active .sideline')).on("mouseout", function () {
+$('.left-section.active .sideline').on("mouseleave", function () {
   slideImage($(".visual-container .left-section"), "100%", $(".visual-container .right-section"), "0%");
 })
