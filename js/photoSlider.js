@@ -35,7 +35,7 @@ function setImageTop (image, holder) {
   }
 }
 
-function slideImage (a, aWidth, b, bWidth) {
+function slideImage (a,aWidth,b,bWidth) {
   a.css("width",aWidth);
   b.css("width",bWidth);
 }
@@ -64,19 +64,19 @@ $($(".visual-container .left-section")).on("click", function () {
     return;
   }
   $(".visual-container .left-section").addClass("active");
-  slideImage($(".visual-container .left-section"), $(".visual-container .right-section"));
+  slideImage($(".visual-container .left-section"),"100%",$(".visual-container .right-section"),"0%");
   setElementLeft($('.visual-container .image-frame'), '0px');
   $('.visual-container').addClass('slided');
 })
 
 $($(".visual-container .right-section")).on("click", function () {
-  if($(".visual-container .left-section").hasClass("active")) {
-    slideImage($(".visual-container .left-section"), "50%", $(".visual-container .right-section"), "50%");
-    $(".visual-container .left-section").removeClass("active");
+  if($(".visual-container .right-section").hasClass("active")) {
+    slideImage($(".visual-container .rigth-section"), "50%", $(".visual-container .left-section"), "50%");
+    $(".visual-container .right-section").removeClass("active");
     return;
   }
   $(".visual-container .right-section").addClass("active");
   setElementLeft($('.visual-container .image-frame'), '0px');
-  slideImage($(".visual-container .right-section"), $(".visual-container .left-section"));
+  slideImage($(".visual-container .right-section"),"100%",$(".visual-container .left-section"),"0%");
   $('.visual-container').addClass('slided');
 })
