@@ -487,14 +487,14 @@ p {
 
 .left-section{
   overflow:hidden;
-  /*background-color: green;*/
   transition: opacity 500ms linear;
+  transition: width 1s ease;
 }
 
 .right-section{
   overflow:hidden;
-  /*background-color: red;*/
   transition: opacity 500ms linear;
+  transition: width 1s linear;
 }
 
 .left-section:hover .image-frame img.fly,
@@ -521,7 +521,8 @@ p {
 	display:block;
   /*width:1920px;*/
 	height:100%;
-	transition: left 400ms linear, top 400ms linear;
+
+	/*transition: left 400ms linear, top 400ms linear;*/
 }
 
 .visual-container img{
