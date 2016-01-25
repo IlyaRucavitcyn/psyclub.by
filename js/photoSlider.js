@@ -51,16 +51,20 @@ $(window).on("resize", function () {
   setElementHeight($('#photo-holder'),$(window).height());
   setElementWidth($('.visual-container .image-frame'),$(window).width());
   setElementHeight($('.visual-container .image-frame'),$(window).height());
-  setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
+  if (!$('.visual-container').hasClass('slided')){
+    setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
+  }
   setImageTop($('.visual-container .image-frame img'), $('.visual-container .image-frame'));
 });
 
 $($(".visual-container .left-section")).on("click", function () {
   slideImage($(".visual-container .left-section"), $(".visual-container .right-section"));
   setElementLeft($('.visual-container .image-frame'), '0px');
+  $('.visual-container').addClass('slided');
 })
 
 $($(".visual-container .right-section")).on("click", function () {
   setElementLeft($('.visual-container .image-frame'), '0px');
   slideImage($(".visual-container .right-section"), $(".visual-container .left-section"));
+  $('.visual-container').addClass('slided');
 })
