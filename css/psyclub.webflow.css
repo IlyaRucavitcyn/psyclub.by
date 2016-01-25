@@ -99,7 +99,7 @@ p {
     top:0;
     left:0;
     height: 80px;
-    background-color:rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.2);
 }
 
 .header {
@@ -517,12 +517,11 @@ p {
 
 .visual-container .image-frame{
   position:relative;
-	overflow:hidden;
-	display:block;
+  overflow:hidden;
+  display:block;
   /*width:1920px;*/
-	height:100%;
-
-	/*transition: left 400ms linear, top 400ms linear;*/
+  height:100%;
+  transition: left 400ms linear, top 400ms linear;
 }
 
 .visual-container img{
