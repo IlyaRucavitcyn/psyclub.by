@@ -488,7 +488,7 @@ p {
 .left-section{
   overflow:hidden;
   transition: opacity 500ms linear;
-  transition: width 1s ease;
+  transition: width 1s liner;
 }
 
 .right-section{
@@ -521,7 +521,7 @@ p {
   display:block;
   /*width:1920px;*/
   height:100%;
-  transition: left 400ms linear, top 400ms linear;
+  transition: left 1s linear, top 1s linear;
 }
 
 .visual-container img{
