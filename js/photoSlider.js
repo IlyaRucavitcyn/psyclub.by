@@ -81,7 +81,8 @@ $($(".visual-container .right-section")).on("click", function () {
     return;
   }
   $(".visual-container .right-section").addClass("active");
-  setElementLeft($('.visual-container .image-frame'), '0px');
+  setElementLeft($('.visual-container .image-frame.left'),-$(window).width()/2);
+  setElementLeft($('.visual-container .image-frame.right'),"0px");
   slideImage($(".visual-container .right-section"),"100%",$(".visual-container .left-section"),"0%");
   $('.visual-container').addClass('slided');
 })
