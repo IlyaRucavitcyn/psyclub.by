@@ -59,10 +59,10 @@ $(window).on("resize", function () {
 
 $($(".visual-container .left-section")).on("click", function () {
   if($(".visual-container .left-section").hasClass("active")) {
+    setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     slideImage($(".visual-container .left-section"), "50%", $(".visual-container .right-section"), "50%");
     $(".visual-container .left-section").removeClass("active");
     $(".visual-container").removeClass("slided");
-    setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     return;
   }
   $(".visual-container .left-section").addClass("active");
@@ -74,10 +74,10 @@ $($(".visual-container .left-section")).on("click", function () {
 
 $($(".visual-container .right-section")).on("click", function () {
   if($(".visual-container .right-section").hasClass("active")) {
+    setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     slideImage($(".visual-container .right-section"), "50%", $(".visual-container .left-section"), "50%");
     $(".visual-container .right-section").removeClass("active");
     $(".visual-container").removeClass("slided");
-    setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     return;
   }
   $(".visual-container .right-section").addClass("active");
