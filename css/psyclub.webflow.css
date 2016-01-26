@@ -529,18 +529,20 @@ p {
 }
 
 .info-default{
-  width:100%;
+  width:auto;
   text-align:center;
   position:absolute;
   z-index: 3;
-  left:0;
+  left:50%;
   bottom:15%;
+  transform:translateX(-50%);
+  transition: left 700ms linear;
   font-size:100px;
 	line-height:1.5;
 }
 
 .info-default p{
-  width:30%;
+  width:100%;
   text-align:center;
   margin:auto;
   z-index: 3;
