@@ -573,12 +573,12 @@ p {
 }
 
 .left-section .info-box{
-  left:1%;
+  left:15px;
   text-align: left;
 }
 
 .right-section .info-box{
-  right:1%;
+  right:15px;
   text-align: right;
 }
 
