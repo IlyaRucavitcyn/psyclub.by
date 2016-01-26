@@ -551,6 +551,34 @@ p {
   background-color:rgba(0,0,0,0.5);
 }
 
+.info-box{
+  position:absolute;
+	top:15%;
+	z-index:3;
+	color:#fff;
+  background-color:rgba(0,0,0,0.5);
+	font-size:28px;
+	line-height:34px;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
+	transition: opacity 500ms linear;
+	opacity:0;
+}
+
+.left-section .info-box{
+  left:1%;
+  text-align: left;
+}
+
+.right-section .info-box{
+  right:1%;
+  text-align: right;
+}
+
+.active .info-box{
+  opacity:1;
+}
+
 .visual-container .image-frame{
   position:relative;
   overflow:hidden;
