@@ -75,7 +75,7 @@ $(".visual-container .left-section, .visual-container .left-section .sideline").
   setElementLeft($('.visual-container .image-frame'), '0px');
   $('.info-default').css({
     transform: 'none',
-    left: '0%',
+    left: '1%',
   });
   $('.visual-container').addClass('slided');
 })
@@ -100,7 +100,7 @@ $(".visual-container .right-section,  .visual-container .right-section .sideline
   slideImage($(".visual-container .right-section"),"100%",$(".visual-container .left-section"),"0%");
   $('.info-default').css({
     transform: 'translateX(-100%)',
-    left:'100%',
+    left:'99%',
   });
   $('.visual-container').addClass('slided');
 })

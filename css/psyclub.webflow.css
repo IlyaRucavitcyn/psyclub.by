@@ -536,7 +536,9 @@ p {
   left:50%;
   bottom:15%;
   transform:translateX(-50%);
-  transition: left 700ms linear;
+  transition:
+    left 700ms linear,
+    transform 300ms linear;
   font-size:100px;
 	line-height:1.5;
 }
@@ -562,6 +564,11 @@ p {
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 300;
 	transition: opacity 500ms linear;
+  transition: transform 500ms liner;
+  -o-transition: transform 500ms liner;
+	-ms-transition: transform 500ms liner;
+	-moz-transition: transform 500ms liner;
+	-webkit-transition: transform 500ms liner;
 	opacity:0;
 }
 
