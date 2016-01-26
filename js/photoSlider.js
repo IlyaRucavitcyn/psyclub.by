@@ -87,10 +87,10 @@ $(".visual-container .right-section").on("click", function () {
   $('.visual-container').addClass('slided');
 })
 
-$('.left-section.active .sideline').on('mouseover', function () {
+$('.left-section .sideline').on('mouseenter', function () {
   slideImage($(".visual-container .left-section"), "80%", $(".visual-container .right-section"), "20%");
 })
 
-$('.left-section.active .sideline').on("mouseleave", function () {
+$('.left-section .sideline').on("mouseleave", function () {
   slideImage($(".visual-container .left-section"), "100%", $(".visual-container .right-section"), "0%");
 })

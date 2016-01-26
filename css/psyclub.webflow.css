@@ -505,22 +505,26 @@ p {
 }
 
 .sideline{
-  width:200px;
+  width:0px;
 	height:100%;
-	position:absolute;
+	/*position:absolute;*/
 	top:0;
 	background:transparent;
 	z-index:7;
 	display:none;
 }
 
-.left-section.active .sideline{
+.active .sideline{
+  position:absolute;
+  width:20%;
   display:block;
+}
+
+.left-section.active .sideline{
   right:0px;
 }
 
 .right-section.active .sideline{
-  display:block;
   left:0px;
 }
 
