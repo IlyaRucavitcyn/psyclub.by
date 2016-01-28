@@ -550,14 +550,19 @@ p {
   background-color:rgba(0,0,0,0.5);
 }
 
-/*.info-box{
+.info-box{
   position:absolute;
-	top:15%;
+  height:150px;
+  padding:1%;
+  width:35%;
+	bottom:5%;
+  left:50%;
+  transform: translateX(-50%);
 	z-index:3;
 	color:#fff;
   background-color:rgba(0,0,0,0.5);
-	font-size:28px;
-	line-height:34px;
+	font-size:20px;
+	line-height:1.1;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
 	transition: opacity 500ms linear;
@@ -567,7 +572,7 @@ p {
 	-moz-transition: transform 500ms liner;
 	-webkit-transition: transform 500ms liner;
 	opacity:0;
-}*/
+}
 
 .left-section .info-default{
   text-align: left;
