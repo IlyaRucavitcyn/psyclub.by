@@ -530,28 +530,27 @@ p {
 
 .info-default{
   width:100%;
-  padding:0px 30%;
-  text-align:center;
+  padding:0px 1%;
+  text-align:right;
   position:absolute;
   z-index: 3;
-  bottom:10%;
+  bottom:5%;
   font-size:0px;
 }
 
 .info-logo{
   display:inline-block;
   width:auto;
-  margin:0 auto;
   font-size: 100px;
   line-height:1.5;
-  text-align:center;
+  /*text-align:center;*/
   z-index: 3;
 	line-height:1.5;
   color:#fff;
   background-color:rgba(0,0,0,0.5);
 }
 
-.info-box{
+/*.info-box{
   position:absolute;
 	top:15%;
 	z-index:3;
@@ -568,7 +567,7 @@ p {
 	-moz-transition: transform 500ms liner;
 	-webkit-transition: transform 500ms liner;
 	opacity:0;
-}
+}*/
 
 .left-section .info-default{
   text-align: left;
