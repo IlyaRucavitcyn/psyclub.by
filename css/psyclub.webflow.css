@@ -189,6 +189,7 @@ p {
   color: #c1a26a;
   text-decoration: none;
 }
+
 .link:hover {
   color: #a8c1d4;
 }
@@ -197,8 +198,13 @@ p {
     /*line-height:3em;*/
     display:block;
     text-align:right;
-    font-weight:600;
+    font-weight:300;
+    text-decoration: underline;
     /*margin:0 0 10px 20px;*/
+}
+
+.feedback{
+  text-decoration: underline;
 }
 
 .menu-item {
