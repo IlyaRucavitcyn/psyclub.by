@@ -506,12 +506,12 @@ p {
 
 .sideline{
   width:0px;
-	height:100%;
-	/*position:absolute;*/
-	top:0;
-	background:transparent;
-	z-index:7;
-	display:none;
+  height:100%;
+  /*position:absolute;*/
+  top:0;
+  background:transparent;
+  z-index:7;
+  display:none;
 }
 
 .active .sideline{
@@ -556,8 +556,33 @@ p {
   padding: 10px;
   width: 450px;
   bottom:60%;
-  z-index: 4;
+  z-index: 0;
   color:#fff;
+  background-color: rgba(0,0,0,0.5);
+  font-size:20px;
+  line-height:1.1;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  /*transition: opacity 500ms linear;*/
+  transition:
+              left 500ms linear,
+              display 500ms linear,
+              opacity 500ms linear,
+              right 500ms linear;
+  /*-o-transition: transform 500ms linear;
+  -ms-transition: transform 500ms linear;
+  -moz-transition: transform 500ms linear;
+  -webkit-transition: transform 500ms linear;*/
+  opacity:0;
+}
+
+.info-contacts{
+  position:absolute;
+  padding: 10px;
+  width: 300px;
+  bottom:40%;
+  z-index: -1000;
+  /*color:#fff;*/
   background-color: rgba(0,0,0,0.5);
   font-size:20px;
   line-height:1.1;
@@ -580,16 +605,17 @@ p {
   font-weight: 500;
 }
 
-.left-section .info-box{
+.left-section .info-box, .left-section .info-contacts{
   left: 20px;
 }
 
-.right-section .info-box{
+.right-section .info-box, .right-section .info-contacts{
   right:20px;
 }
 
-.active .info-box{
+.active .info-box, .active .info-contacts{
   opacity:1;
+  z-index: 4;
 }
 
 .visual-container .image-frame{
