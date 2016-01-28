@@ -529,26 +529,21 @@ p {
 }
 
 .info-default{
-  width:100%;
-  padding: 0px 20px;
-  text-align:center;
+  width:450px;
   position:absolute;
   z-index: 3;
   bottom:5%;
-  font-size:0px;
-  transition: text-align 500ms linear;
-}
-
-.info-logo{
-  display:inline-block;
-  width:auto;
   font-size: 100px;
   line-height:1.5;
-  /*text-align:center;*/
-  z-index: 3;
-	line-height:1.5;
+  text-align:center;
   color:#fff;
   background-color:rgba(0,0,0,0.5);
+  left:50%;
+  transform: translateX(-50%);
+  transition:
+          left 700ms linear,
+          right 700ms linear,
+          transform 200ms linear;
 }
 
 .info-box{
@@ -565,14 +560,9 @@ p {
   font-weight: 300;
   /*transition: opacity 500ms linear;*/
   transition:
-              left 500ms linear,
-              display 500ms linear,
-              opacity 500ms linear,
-              right 500ms linear;
-  /*-o-transition: transform 500ms linear;
-  -ms-transition: transform 500ms linear;
-  -moz-transition: transform 500ms linear;
-  -webkit-transition: transform 500ms linear;*/
+              left 700ms linear,
+              opacity 700ms linear,
+              right 700ms linear;
   opacity:0;
 }
 

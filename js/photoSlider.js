@@ -62,7 +62,8 @@ $(".visual-container .left-section, .visual-container .left-section .sideline").
     setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     slideImage($(".visual-container .left-section"), "50%", $(".visual-container .right-section"), "50%");
     $('.info-default').css({
-      textAlign: 'center',
+      left: '50%',
+      transform:'translateX(-50%)',
     });
     $(".visual-container .left-section").removeClass("active");
     $(".visual-container").removeClass("slided");
@@ -73,7 +74,8 @@ $(".visual-container .left-section, .visual-container .left-section .sideline").
   slideImage($(".visual-container .left-section"),"100%",$(".visual-container .right-section"),"0%");
   setElementLeft($('.visual-container .image-frame'), '0px');
   $('.info-default').css({
-    textAlign: 'left',
+    left: '20px',
+    transform:'translateX(0%)',
   });
   $('.visual-container').addClass('slided');
 })
@@ -83,7 +85,8 @@ $(".visual-container .right-section,  .visual-container .right-section .sideline
   if($(".visual-container .right-section").hasClass("active")) {
     setElementLeft($('.visual-container .image-frame'),-$(window).width()/4);
     $('.info-default').css({
-      textAlign: 'center',
+      left: '50%',
+      transform:'translateX(-50%)',
     });
     slideImage($(".visual-container .right-section"), "50%", $(".visual-container .left-section"), "50%");
     $(".visual-container .right-section").removeClass("active");
@@ -96,7 +99,8 @@ $(".visual-container .right-section,  .visual-container .right-section .sideline
   setElementLeft($('.visual-container .image-frame.right'),"0px");
   slideImage($(".visual-container .right-section"),"100%",$(".visual-container .left-section"),"0%");
   $('.info-default').css({
-    textAlign: 'right',
+    left: $(window).width()-20+'px',
+    transform:'translateX(-100%)',
   });
   $('.visual-container').addClass('slided');
 })
