@@ -529,24 +529,22 @@ p {
 }
 
 .info-default{
-  width:auto;
+  width:100%;
+  padding:0px 30%;
   text-align:center;
   position:absolute;
   z-index: 3;
-  left:50%;
-  bottom:15%;
-  transform:translateX(-50%);
-  transition:
-    left 700ms linear,
-    transform 300ms linear;
-  font-size:100px;
-	line-height:1.5;
+  bottom:10%;
+  font-size:0px;
 }
 
-.info-default p{
-  width:100%;
+.info-logo{
+  display:inline-block;
+  width:auto;
+  margin:0 auto;
+  font-size: 100px;
+  line-height:1.5;
   text-align:center;
-  margin:auto;
   z-index: 3;
 	line-height:1.5;
   color:#fff;
@@ -572,13 +570,11 @@ p {
 	opacity:0;
 }
 
-.left-section .info-box{
-  left:15px;
+.left-section .info-default{
   text-align: left;
 }
 
-.right-section .info-box{
-  right:15px;
+.right-section .info-default{
   text-align: right;
 }
 
@@ -590,7 +586,6 @@ p {
   position:relative;
   overflow:hidden;
   display:block;
-  /*width:1920px;*/
   height:100%;
   transition: left 700ms linear, top 700ms linear;
 }
