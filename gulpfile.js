@@ -30,6 +30,7 @@ gulp.task('eslint', function () {
         .pipe(eslint.failAfterError());
 });
 
+gulp.task('check',['eslint','csslint'], function(){});
 // gulp.task('concatcss', function () {
 //   return gulp.src('src/css_files/*.css')
 //     .pipe(concatCss('bundle.css'))
