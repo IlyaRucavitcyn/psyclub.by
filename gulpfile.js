@@ -48,13 +48,13 @@ gulp.task('concat',['concatcss','concatjs']);
 gulp.task('cssmin', function () {
 	gulp.src('./css/bundle.css')
 		.pipe(cssmin())
-		.pipe(gulp.dest('css/bundle_min.css'));
+		.pipe(gulp.dest('./css'));
 });
 
 gulp.task('jsmin', function() {
   return gulp.src('js/all.js')
     .pipe(uglify())
-    .pipe(gulp.dest('js/all_min.js'));
+    .pipe(gulp.dest('./js'));
 });
 //
 // gulp.task('watch', function() {
