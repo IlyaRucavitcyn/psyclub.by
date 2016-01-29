@@ -14,24 +14,22 @@ gulp.task('csslint', function() {
     }))
     .pipe(csslint.reporter());
 });
-//
-// gulp.task('jslint', function () {
-//   return gulp.src(['src/js_files/*.js'])
-//     .pipe(jslint({
-//         node: true,
-//         evil: true,
-//         nomen: true,
-//         global: [],
-//         predef: [],
-//         reporter: 'default',
-//         edition: '2014-07-08',
-//         errorsOnly: false
-//     }))
-//     .on('error', function (error) {
-//             console.error(String(error));
-//     });
-// });
-//
+
+
+gulp.task('eslint', function () {
+    return gulp.src('./js/*.js')
+        .pipe(eslint())
+        .pipe(eslint.result(function (result) {
+	    // Called for each ESLint result.
+	          console.log('ESLint result: ' + result.filePath);
+	          console.log('# Messages: ' + result.messages.length);
+	          console.log('# Warnings: ' + result.warningCount);
+	          console.log('# Errors: ' + result.errorCount);
+	      }))
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
+});
+
 // gulp.task('concatcss', function () {
 //   return gulp.src('src/css_files/*.css')
 //     .pipe(concatCss('bundle.css'))
