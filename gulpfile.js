@@ -7,17 +7,13 @@ var eslint = require('gulp-eslint');
 // var cssmin = require('gulp-cssmin');
 // var uglify = require('gulp-uglify');
 
-
-
-//
-//
-// gulp.task('csslint', function() {
-//   gulp.src('src/**/*.css')
-//     .pipe(csslint({
-//       'adjoining-classes':false
-//     }))
-//     .pipe(csslint.reporter());
-// });
+gulp.task('csslint', function() {
+  gulp.src('./css/*.css')
+    .pipe(csslint({
+      'adjoining-classes':false
+    }))
+    .pipe(csslint.reporter());
+});
 //
 // gulp.task('jslint', function () {
 //   return gulp.src(['src/js_files/*.js'])
