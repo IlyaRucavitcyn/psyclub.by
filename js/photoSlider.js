@@ -11,7 +11,6 @@ $(function () {
         $rightSection = $('.right-section'),
         $infoDefault = $('.info-default');
 
-
     function setDimentions() {
         windowWidth = $(window).width();
         windowHeight = $(window).height();

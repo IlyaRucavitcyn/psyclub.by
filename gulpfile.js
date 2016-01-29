@@ -63,6 +63,8 @@ gulp.task('watch', function() {
   gulp.watch(['./css/*.css','./js/*.js'], ['eslint','concat','min']);
 });
 
+gulp.task('default',['watch']);
+
 // // gulp.task('watch', function() {
 // //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // // });
@@ -73,4 +75,3 @@ gulp.task('watch', function() {
 //     // .pipe(debug({title: 'debug:'}));
 // });
 //
-// gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
