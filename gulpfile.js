@@ -1,13 +1,14 @@
-// var gulp = require('gulp');
-// var csslint = require('gulp-csslint');
-// var jslint = require('gulp-jslint');
+var gulp = require('gulp');
+var csslint = require('gulp-csslint');
+var eslint = require('gulp-eslint');
+
 // var concatCss = require('gulp-concat-css');
 // var concat = require('gulp-concat');
 // var cssmin = require('gulp-cssmin');
 // var uglify = require('gulp-uglify');
-// var rename = require("gulp-rename");
-// var ghPages = require('gulp-gh-pages');
-// var debug = require('gulp-debug');
+
+
+
 //
 //
 // gulp.task('csslint', function() {
