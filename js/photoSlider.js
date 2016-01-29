@@ -54,7 +54,7 @@ $(function () {
     setDimentions();
     $(window).on("resize", setDimentions);
 
-    $leftSection.on("click", function () {
+    $visualContainer.on("click", '.left-section, .left-section .sideline', function () {
         var activeFlag = $leftSection.hasClass("active"),
             imageFrameLeft = activeFlag ? -windowWidth * 0.25 : '0px',
             infoLeft = activeFlag ? '50%' : '20px',
@@ -79,7 +79,7 @@ $(function () {
     })
 
 
-    $rightSection.on("click", function () {
+    $visualContainer.on("click", '.right-section, .right-section .sideline', function () {
         var activeFlag = $rightSection.hasClass("active"),
             imageFrameLeft = -$(window).width() * 0.25,
             infoLeft = activeFlag ? '50%' : windowWidth - 20 + 'px',
