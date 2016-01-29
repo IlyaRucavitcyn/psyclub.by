@@ -56,7 +56,9 @@ gulp.task('jsmin', function() {
     .pipe(uglify())
     .pipe(gulp.dest('./js'));
 });
-//
+
+gulp.task('min',['cssmin','jsmin']);
+
 // gulp.task('watch', function() {
 //   gulp.watch(['src/**/*.css','src/**/*.js'], ['jslint', 'concatjs', 'csslint', 'concatcss']);
 // });
