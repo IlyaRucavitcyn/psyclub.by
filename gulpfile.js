@@ -38,11 +38,11 @@ gulp.task('concatcss', function () {
     .pipe(gulp.dest('./css'));
 });
 
-// gulp.task('concatjs', function() {
-//   return gulp.src('src/js_files/*.js')
-//     .pipe(concat('all.js'))
-//     .pipe(gulp.dest('js/'));
-// });
+gulp.task('concatjs', function() {
+  return gulp.src('./js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./js'));
+});
 //
 // gulp.task('cssmin', function () {
 // 	gulp.src('src/css_files/*.css')
