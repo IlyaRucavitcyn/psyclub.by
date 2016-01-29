@@ -32,29 +32,29 @@ gulp.task('eslint', function () {
 gulp.task('check',['eslint','csslint'], function(){});
 
 gulp.task('concatcss', function () {
-  return gulp.src('./public/css/*.css')
+  return gulp.src('./css/*.css')
     .pipe(concat('bundle.css'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('concatjs', function() {
-  return gulp.src('./public/js/*.js')
+  return gulp.src('./js/*.js')
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('concat',['concatcss','concatjs']);
 
 gulp.task('cssmin', function () {
-	gulp.src('./css/bundle.css')
+	gulp.src('./public/css/bundle.css')
 		.pipe(cssmin())
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('jsmin', function() {
-  return gulp.src('js/all.js')
+  return gulp.src('./pubic/js/all.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./pubic/js'));
 });
 
 gulp.task('min',['cssmin','jsmin']);
