@@ -2,10 +2,9 @@ var gulp = require('gulp');
 var csslint = require('gulp-csslint');
 var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
+var cssmin = require('gulp-cssmin');
+var uglify = require('gulp-uglify');
 
-// var concatCss = require('gulp-concat-css');
-// var cssmin = require('gulp-cssmin');
-// var uglify = require('gulp-uglify');
 
 gulp.task('csslint', function() {
   gulp.src('./css/*.css')
@@ -43,12 +42,14 @@ gulp.task('concatjs', function() {
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./js'));
 });
-//
-// gulp.task('cssmin', function () {
-// 	gulp.src('src/css_files/*.css')
-// 		.pipe(cssmin())
-// 		.pipe(gulp.dest('css/*.css'));
-// });
+
+gulp.task('concat',['concatcss','concatjs']);
+
+gulp.task('cssmin', function () {
+	gulp.src('./css/bundle.css')
+		.pipe(cssmin())
+		.pipe(gulp.dest('css/bundle_min.css'));
+});
 //
 // gulp.task('jsmin', function() {
 //   return gulp.src('js/*.js')
