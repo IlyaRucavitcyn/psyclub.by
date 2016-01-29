@@ -50,12 +50,12 @@ gulp.task('cssmin', function () {
 		.pipe(cssmin())
 		.pipe(gulp.dest('css/bundle_min.css'));
 });
-//
-// gulp.task('jsmin', function() {
-//   return gulp.src('js/*.js')
-//     .pipe(uglify())
-//     .pipe(gulp.dest('src/js_files/*.js'));
-// });
+
+gulp.task('jsmin', function() {
+  return gulp.src('js/all.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('js/all_min.js'));
+});
 //
 // gulp.task('watch', function() {
 //   gulp.watch(['src/**/*.css','src/**/*.js'], ['jslint', 'concatjs', 'csslint', 'concatcss']);
