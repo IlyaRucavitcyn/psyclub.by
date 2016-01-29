@@ -60,7 +60,7 @@ gulp.task('jsmin', function() {
 gulp.task('min',['cssmin','jsmin']);
 
 gulp.task('watch', function() {
-  gulp.watch(['./css/*.css','./js/*.js'], ['check','concat','min']);
+  gulp.watch(['./css/*.css','./js/*.js'], ['eslint','concat','min']);
 });
 
 // // gulp.task('watch', function() {
