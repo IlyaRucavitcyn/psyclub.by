@@ -22,6 +22,7 @@ $(function () {
             $imageFrame.css("left", -windowWidth * 0.25);
         }
 
+
         winRatio = windowWidth / windowHeight;
 
         if (winRatio > imgRatio) {

@@ -32,13 +32,13 @@ gulp.task('eslint', function () {
 gulp.task('check',['eslint','csslint'], function(){});
 
 gulp.task('concatcss', function () {
-  return gulp.src('./css/*.css')
+  return gulp.src('./public/css/*.css')
     .pipe(concat('bundle.css'))
     .pipe(gulp.dest('./css'));
 });
 
 gulp.task('concatjs', function() {
-  return gulp.src('./js/*.js')
+  return gulp.src('./public/js/*.js')
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./js'));
 });
@@ -59,10 +59,10 @@ gulp.task('jsmin', function() {
 
 gulp.task('min',['cssmin','jsmin']);
 
-// gulp.task('watch', function() {
-//   gulp.watch(['src/**/*.css','src/**/*.js'], ['jslint', 'concatjs', 'csslint', 'concatcss']);
-// });
-//
+gulp.task('watch', function() {
+  gulp.watch(['./css/*.css','./js/*.js'], ['check','concat','min']);
+});
+
 // // gulp.task('watch', function() {
 // //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // // });
