@@ -538,11 +538,11 @@ body:after {
     left: 0px;
 }
 .info-default {
-    width: 450px;
+    width: 80%;
     position: absolute;
     z-index: 3;
-    bottom: 9%;
-    font-size: 100px;
+    bottom: 15%;
+    font-size: 70px;
     line-height: 1.5;
     text-align: center;
     color: #fff;
@@ -641,7 +641,7 @@ body:after {
     width: 50px;
     height: 50px;
     left:50%;
-    outline:hidden;
+    outline:none;
     bottom: 3%;
     z-index: 3;
     transform: translateX(-50%);
@@ -651,7 +651,7 @@ body:after {
 }
 
 .scroll-button:hover {
-  background-color: rgba(39, 39, 41, 0.5);
+  background-color: rgba(39,39,41,0.5);
 }
 
 @media (max-width: 991px) {
