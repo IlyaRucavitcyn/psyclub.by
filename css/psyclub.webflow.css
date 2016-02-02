@@ -644,8 +644,9 @@ body:after {
     bottom: 3%;
     z-index: 3;
     transform: translateX(-50%);
-    border-radius: 40%;
+    border-radius: 50%;
     background:url('../images/Scrolldown.svg') no-repeat 50% 50% rgba(0, 0, 0, 0.5);
+    background-size: 70%;
 }
 
 @media (max-width: 991px) {
