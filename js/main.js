@@ -5,3 +5,7 @@ $(".header").sticky({
 $(window).on('load', function () {
   $('.loading').removeClass('loading')
 });
+
+$('.scroll-button').on('click', function () {
+  $('body').animate({scrollTop:$(window).height()},1000)
+})
