@@ -444,9 +444,8 @@ p {
     float: left;
 }
 
-body.loading{
-  opacity: 0;
-  transition: opacity 500ms linear;
+body.loading .page {
+	opacity:0
 }
 
 body.loading:after {
@@ -462,13 +461,17 @@ body:after {
 	left:0;
 	bottom:0;
 	background: url(../images/loader.gif) no-repeat 50% 50%;
-	-webkit-transition: opacity 500ms linear;
-	-moz-transition: opacity 500ms linear;
-	-ms-transition: opacity 500ms linear;
-	-o-transition: opacity 500ms linear;
 	transition: opacity 500ms linear;
 	opacity:0;
 	z-index:-1;
+}
+
+.page {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	transition: opacity 500ms linear;
+	opacity:1;
 }
 
 .column {
