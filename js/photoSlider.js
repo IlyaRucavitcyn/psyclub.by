@@ -15,6 +15,7 @@ $(function () {
         windowWidth = $(window).width();
         windowHeight = $(window).height();
 
+
         $photoHolder.height(windowHeight);
         $imageFrame.width(windowWidth).height(windowHeight);
 

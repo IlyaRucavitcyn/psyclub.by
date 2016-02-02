@@ -1,68 +1,70 @@
-// var gulp = require('gulp');
-// var csslint = require('gulp-csslint');
-// var jslint = require('gulp-jslint');
-// var concatCss = require('gulp-concat-css');
-// var concat = require('gulp-concat');
-// var cssmin = require('gulp-cssmin');
-// var uglify = require('gulp-uglify');
-// var rename = require("gulp-rename");
-// var ghPages = require('gulp-gh-pages');
-// var debug = require('gulp-debug');
-//
-//
-// gulp.task('csslint', function() {
-//   gulp.src('src/**/*.css')
-//     .pipe(csslint({
-//       'adjoining-classes':false
-//     }))
-//     .pipe(csslint.reporter());
-// });
-//
-// gulp.task('jslint', function () {
-//   return gulp.src(['src/js_files/*.js'])
-//     .pipe(jslint({
-//         node: true,
-//         evil: true,
-//         nomen: true,
-//         global: [],
-//         predef: [],
-//         reporter: 'default',
-//         edition: '2014-07-08',
-//         errorsOnly: false
-//     }))
-//     .on('error', function (error) {
-//             console.error(String(error));
-//     });
-// });
-//
-// gulp.task('concatcss', function () {
-//   return gulp.src('src/css_files/*.css')
-//     .pipe(concatCss('bundle.css'))
-//     .pipe(gulp.dest('css/'));
-// });
-//
-// gulp.task('concatjs', function() {
-//   return gulp.src('src/js_files/*.js')
-//     .pipe(concat('all.js'))
-//     .pipe(gulp.dest('js/'));
-// });
-//
-// gulp.task('cssmin', function () {
-// 	gulp.src('src/css_files/*.css')
-// 		.pipe(cssmin())
-// 		.pipe(gulp.dest('css/*.css'));
-// });
-//
-// gulp.task('jsmin', function() {
-//   return gulp.src('js/*.js')
-//     .pipe(uglify())
-//     .pipe(gulp.dest('src/js_files/*.js'));
-// });
-//
-// gulp.task('watch', function() {
-//   gulp.watch(['src/**/*.css','src/**/*.js'], ['jslint', 'concatjs', 'csslint', 'concatcss']);
-// });
-//
+var gulp = require('gulp');
+var csslint = require('gulp-csslint');
+var eslint = require('gulp-eslint');
+var concat = require('gulp-concat');
+var cssmin = require('gulp-cssmin');
+var uglify = require('gulp-uglify');
+
+
+gulp.task('csslint', function() {
+  gulp.src('./css/*.css')
+    .pipe(csslint({
+      'adjoining-classes':false
+    }))
+    .pipe(csslint.reporter());
+});
+
+
+gulp.task('eslint', function () {
+    return gulp.src('./js/*.js')
+        .pipe(eslint())
+      //   .pipe(eslint.result(function (result) {
+	    // // Called for each ESLint result.
+	    //       console.log('ESLint result: ' + result.filePath);
+	    //       console.log('# Messages: ' + result.messages.length);
+	    //       console.log('# Warnings: ' + result.warningCount);
+	    //       console.log('# Errors: ' + result.errorCount);
+	    //   }))
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
+});
+
+gulp.task('check',['eslint','csslint'], function(){});
+
+gulp.task('concatcss', function () {
+  return gulp.src('./css/*.css')
+    .pipe(concat('bundle.css'))
+    .pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('concatjs', function() {
+  return gulp.src('./js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./public/js'));
+});
+
+gulp.task('concat',['concatcss','concatjs']);
+
+gulp.task('cssmin', function () {
+	gulp.src('./public/css/bundle.css')
+		.pipe(cssmin())
+		.pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('jsmin', function() {
+  return gulp.src('./pubic/js/all.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./pubic/js'));
+});
+
+gulp.task('min',['cssmin','jsmin']);
+
+gulp.task('watch', function() {
+  gulp.watch(['./css/*.css','./js/*.js'], ['check','concat','min']);
+});
+
+gulp.task('default',['watch']);
+
 // // gulp.task('watch', function() {
 // //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // // });
@@ -73,4 +75,3 @@
 //     // .pipe(debug({title: 'debug:'}));
 // });
 //
-// gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
