@@ -641,12 +641,17 @@ body:after {
     width: 50px;
     height: 50px;
     left:50%;
+    outline:hidden;
     bottom: 3%;
     z-index: 3;
     transform: translateX(-50%);
     border-radius: 50%;
     background:url('../images/Scrolldown.svg') no-repeat 50% 50% rgba(0, 0, 0, 0.5);
     background-size: 70%;
+}
+
+.scroll-button:hover {
+  background-color: rgba(39, 39, 41, 0.5);
 }
 
 @media (max-width: 991px) {
