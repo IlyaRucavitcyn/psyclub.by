@@ -242,7 +242,7 @@ p {
     transition: background 300ms linear;
 }
 .list-item:hover{
-  background-color: rgba(220,220,220,0.2);
+  background-color: rgba(220, 220, 220, 0.56);
 }
 .bl-280 {
     width: 280px;
