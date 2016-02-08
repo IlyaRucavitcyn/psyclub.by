@@ -394,6 +394,12 @@ p {
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
+.bl-line-bottom-problems{
+    /* padding-bottom: 0px; */
+    /* border-bottom-style: solid; */
+    /* border-bottom-width: 1px; */
+    border-bottom: 1px solid rgba(153,153,153,1);
+}
 .txt-yellow {
     color: #fffc1b;
     text-decoration: none;
