@@ -222,11 +222,11 @@ p {
 }
 .list-item {
     /*margin-bottom: 18px;*/
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(153,153,153,0.4);
 }
 .list-item:last-child {
     /*margin-bottom: 18px;*/
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(153,153,153,0.4);
 }
 .bl-280 {
     width: 280px;
@@ -345,6 +345,7 @@ p {
 }
 .bl-mb-50.bl-ml-40 {
   text-align: center;
+  padding: 0 20px 0 20px;
   box-shadow: -5px 3px 5px rgba(153,153,153,0.3),
               5px 3px 5px rgba(153,153,153,0.3);
 }
