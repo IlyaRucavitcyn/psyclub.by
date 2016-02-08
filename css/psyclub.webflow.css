@@ -85,16 +85,16 @@ p {
     background-attachment: fixed;
 }*/
 .bg-section-sandy{
-  background: linear-gradient(red 0%, rgb(245, 239, 231) 70%, blue 90%, rgb(244,248,246) 100%);
+  background: rgb(236,237,236); /*fallback color*/
 }
 .bg-section-greener{
-  background-color: rgb(244,248,246);
+  background-color: rgb(141,156,149);
 }
 .bg-section-bluer{
-  background-color: #FAFAFA;
+  background-color: rgb(236,237,236);
 }
 .bg-footer{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgb(208, 204, 204);
 }
 .promo-face {
     display: block;
