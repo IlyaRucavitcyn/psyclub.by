@@ -333,6 +333,9 @@ p {
 .bl-mb-50 {
     margin-bottom: 50px;
 }
+.bl-mb-50.bl-ml-40 {
+  text-align: center;
+}
 .txt-21-36 {
     font-size: 21px;
     line-height: 36px;
@@ -769,6 +772,7 @@ body:after {
         margin-left: 40px;
         padding-right: 170px;
     }
+
     .bl-660.bl-mb-50.bl-ml-40.bl-mr-170 {
         margin-right: 170px;
     }
