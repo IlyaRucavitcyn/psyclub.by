@@ -78,11 +78,23 @@ p {
     float: right;
     background-color: transparent;
 }
-.bg-photo {
+/*.bg-photo {
     background-image: url('../images/bg.jpg');
     background-position: 50% 100%;
     background-size: cover;
     background-attachment: fixed;
+}*/
+.bg-section-sandy{
+  background-color: rgb(245, 239, 231);
+}
+.bg-section-greener{
+  background-color: rgb(244,248,246);
+}
+.bg-section-bluer{
+  background-color: #FAFAFA;
+}
+.bg-footer{
+  background-color: rgba(0,0,0,0.3);
 }
 .promo-face {
     display: block;
