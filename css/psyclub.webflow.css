@@ -85,7 +85,7 @@ p {
     background-attachment: fixed;
 }*/
 .bg-section-sandy{
-  background-color: rgb(245, 239, 231);
+  background: linear-gradient(red 0%, rgb(245, 239, 231) 70%, blue 90%, rgb(244,248,246) 100%);
 }
 .bg-section-greener{
   background-color: rgb(244,248,246);
