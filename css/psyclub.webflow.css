@@ -262,10 +262,14 @@ p {
     text-align: center;
 }
 .forms-list {
+    font-size: 0px;
     font-weight: 400;
 }
 .forms-list-item {
     display: inline-block;
+    font-size: 18px;
+    width: 25%;
+    box-sizing: border-box;
 }
 .txt-white {
     display: inline-block;
