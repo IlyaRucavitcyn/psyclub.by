@@ -216,13 +216,24 @@ p {
 }
 .features{
   font-family: 'Roboto Condensed', sans-serif;
-  /* letter-spacing: 0.02em; */
 }
 .features .link{
   font-size: 20px;
   font-weight:300;
   color:#1C0E04;
   text-decoration: underline;
+}
+.individual{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.1em;
+  font-weight:400;
+  letter-spacing: 0.02em;
+}
+.individual .link{
+  font-size: 15px;
+  font-weight:900;
+  letter-spacing: 0.02em;
+  color:#333333;
 }
 .feedback {
     text-decoration: underline;
