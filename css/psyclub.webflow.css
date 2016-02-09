@@ -94,7 +94,7 @@ p {
   background-color: rgb(236,237,236);
 }
 .bg-section-features{
-  background-color: rgb(236,237,236);
+  background-color: rgba(200,255,230,0.5);
 }
 .bg-footer{
   background-color: rgb(208, 204, 204);
@@ -216,8 +216,7 @@ p {
 }
 .features{
   font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: 0.02em;
-
+  /* letter-spacing: 0.02em; */
 }
 .features .link{
   font-size: 20px;
