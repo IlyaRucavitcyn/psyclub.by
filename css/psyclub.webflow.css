@@ -267,9 +267,19 @@ p {
 }
 .forms-list-item {
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    color: #1C0E04;
     width: 25%;
     box-sizing: border-box;
+    border-right: 2px solid rgba(153,153,153,0.4);
+}
+.forms-list-item:last-child{
+    border-right: none;
+}
+.forms-list-item .link{
+    color: #1C0E04;
 }
 .txt-white {
     display: inline-block;
