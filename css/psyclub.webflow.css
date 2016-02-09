@@ -93,6 +93,9 @@ p {
 .bg-section-bluer{
   background-color: rgb(236,237,236);
 }
+.bg-section-features{
+  background-color: rgb(236,237,236);
+}
 .bg-footer{
   background-color: rgb(208, 204, 204);
 }
@@ -210,6 +213,17 @@ p {
     font-weight: 300;
     text-decoration: underline;
     /*margin:0 0 10px 20px;*/
+}
+.features{
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.02em;
+
+}
+.features .link{
+  font-size: 20px;
+  font-weight:300;
+  color:#1C0E04;
+  text-decoration: underline;
 }
 .feedback {
     text-decoration: underline;
