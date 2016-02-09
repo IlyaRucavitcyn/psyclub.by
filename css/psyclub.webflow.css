@@ -393,8 +393,6 @@ p {
 .bl-mb-50.bl-ml-40 {
   text-align: center;
   padding: 0 20px 0 20px;
-  box-shadow: -5px 3px 5px rgba(153,153,153,0.3),
-              5px 3px 5px rgba(153,153,153,0.3);
 }
 .txt-21-36 {
     font-size: 21px;
