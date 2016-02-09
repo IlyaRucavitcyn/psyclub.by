@@ -196,6 +196,10 @@ p {
     text-decoration: none;
 }
 .list-item .link {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight:300;
+    color:#1C0E04;
     display: block;
     width: 100%;
 }
