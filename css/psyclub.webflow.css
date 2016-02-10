@@ -84,6 +84,15 @@ p {
     background-size: cover;
     background-attachment: fixed;
 }*/
+.section-header{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 3em;
+  text-decoration: none;
+}
 .bg-section-sandy{
   background: rgb(255, 254, 250);/*fallback color*/
 }
@@ -103,7 +112,7 @@ p {
   background-color: rgba(227,238,252,1);
 }
 .bg-footer{
-  background-color: rgb(208, 204, 204);
+  background-color: rgb(76, 68, 68);
 }
 .promo-face {
     display: block;
@@ -424,7 +433,8 @@ p {
 .bl-skype {
     background-image: -webkit-linear-gradient(#22b0ed, #1f9ed5);
     background-image: linear-gradient(#22b0ed, #1f9ed5);
-    margin: 10% auto;
+    margin-left:  auto;
+    margin-right: auto;
 }
 .skypelogo {
     position: relative;
@@ -498,20 +508,20 @@ p {
 }
 .h-link {
     color: black;
-    font-size: 30px;
+    /*font-size: 30px;
     line-height: 36px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 .h-link:hover {
     color: #22b0ed;
 }
 .h-link-white {
     color: white;
-    font-size: 30px;
+    /*font-size: 30px;
     line-height: 36px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 .h-link-white:hover {
     color: #fffc1b;
