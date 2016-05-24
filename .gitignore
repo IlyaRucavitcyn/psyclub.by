@@ -36,3 +36,6 @@ node_modules
 
 #Adding blog/wp-content
 blog/wp-content/uploads
+
+#Other
+imges_src

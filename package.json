@@ -4,8 +4,7 @@
   "description": "http://ilyarucavitcyn.github.io/psyclub.by",
   "main": "index.js",
   "scripts": {
-    "start":"node app"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,7 @@
     "gulp-csslint": "^0.2.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-eslint": "^1.1.1",
+    "gulp-imagemin": "^3.0.1",
     "gulp-uglify": "^1.5.1"
   }
 }

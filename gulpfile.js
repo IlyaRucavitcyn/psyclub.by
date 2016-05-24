@@ -4,6 +4,7 @@ var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
 
 
 gulp.task('csslint', function() {
@@ -61,6 +62,12 @@ gulp.task('min',['cssmin','jsmin']);
 
 gulp.task('watch', function() {
   gulp.watch(['./css/*.css','./js/*.js'], ['check','concat','min']);
+});
+
+gulp.task('img', function () {
+  gulp.src('./images_src/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('./images'))
 });
 
 gulp.task('default',['watch']);
